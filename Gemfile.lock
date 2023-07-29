@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/joshmn/ahoy_captain.git
-  revision: 799c1802d3997ed186669fcad0b215147fbf201e
+  revision: 59e558df354ba6ae73a2ddc20e92ab85a47ada22
   specs:
-    ahoy_captain (0.1.0)
+    ahoy_captain (0.1.1)
       ahoy_matey (>= 1.1)
       chartkick (>= 4)
       groupdate (>= 5)
@@ -207,7 +207,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  ahoy_captain!
+  ahoy_captain (~> 0.1.1)!
   ahoy_matey (~> 4.2)
   debug
   pg (~> 1.1)
