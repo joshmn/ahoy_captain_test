@@ -64,7 +64,7 @@ AhoyCaptain.configure do |config|
   # config.periods.add :param_name, "Label", -> { [3.days.ago, Date.today] }
   #
   # You can also remove an existing one:
-  config.periods.delete(:all)
+  config.ranges.delete(:all)
   #
   # Or add to the defaults:
   # config.periods.add :custom, "Custom", -> { [6.hours.ago, 2.minutes.ago] }
