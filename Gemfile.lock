@@ -1,5 +1,6 @@
-PATH
-  remote: ../ahoy_captain
+GIT
+  remote: https://github.com/joshmn/ahoy_captain.git
+  revision: 9e8ff66cec869cdb3d9e9c3f42475722bb5e8748
   specs:
     ahoy_captain (0.69420)
       ahoy_matey (>= 1.1)
@@ -208,7 +209,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  ahoy_captain (~> 0.69)!
+  ahoy_captain (~> 0.69420)!
   ahoy_matey (~> 4.2)
   debug
   pg (~> 1.1)
