@@ -29,7 +29,7 @@ group :development do
 end
 
 
-gem "ahoy_captain", "0.7", github: "joshmn/ahoy_captain"
+gem "ahoy_captain", "0.71", github: "joshmn/ahoy_captain"
 
 gem "ahoy_matey", "~> 4.2"
 gem 'geocoder'
