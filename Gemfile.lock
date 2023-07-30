@@ -209,7 +209,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  ahoy_captain (~> 0.69420)!
+  ahoy_captain (~> 0.6969)!
   ahoy_matey (~> 4.2)
   debug
   pg (~> 1.1)
