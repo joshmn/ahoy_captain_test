@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/joshmn/ahoy_captain.git
-  revision: 5833006859cd37649ccc467dc8cb25d26675e51d
+  revision: 2d8bd0dbcff3d127d243aa111a51a622b54680aa
   specs:
-    ahoy_captain (0.71)
+    ahoy_captain (0.72)
       ahoy_matey (>= 1.1)
       chartkick (>= 4)
       groupdate (>= 5)
@@ -210,7 +210,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  ahoy_captain (= 0.71)!
+  ahoy_captain (= 0.72)!
   ahoy_matey (~> 4.2)
   debug
   geocoder
