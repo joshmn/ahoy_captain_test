@@ -65,7 +65,6 @@ AhoyCaptain.configure do |config|
   #
   # You can also remove an existing one:
   config.ranges.reset
-  config.ranges.add :realtime, "Now", -> { [1.minute.ago] }
   config.ranges.add '1h', "This hour", -> { [Time.current.beginning_of_hour, Time.current] }
   config.ranges.add '60m', "Last 60 minutes", -> { [60.minutes.ago, Time.current] }
   config.ranges.add '4h', "Last 4 hours", -> { [4.hours.ago, Time.current] }
