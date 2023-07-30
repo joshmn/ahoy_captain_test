@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/joshmn/ahoy_captain.git
-  revision: d9bb2a4e31fb4d6d4bb7c10bc907e7d5e4970688
+  revision: 1fd09a368f200c0124f7851b1ba7274bd2fbfa6b
   specs:
-    ahoy_captain (0.73)
+    ahoy_captain (0.75)
       ahoy_matey (>= 1.1)
       chartkick (>= 4)
       groupdate (>= 5)
@@ -203,14 +203,14 @@ GEM
     websocket-driver (0.7.6)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
-    zeitwerk (2.6.9)
+    zeitwerk (2.6.10)
 
 PLATFORMS
   arm64-darwin-21
   x86_64-linux
 
 DEPENDENCIES
-  ahoy_captain (= 0.73)!
+  ahoy_captain!
   ahoy_matey (~> 4.2)
   debug
   geocoder
