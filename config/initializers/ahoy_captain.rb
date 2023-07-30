@@ -65,6 +65,7 @@ AhoyCaptain.configure do |config|
   #
   # You can also remove an existing one:
   config.ranges.delete(:all)
+  config.ranges.delete(:realtime)
   config.ranges.max = 180.days
   #
   # Or add to the defaults:
