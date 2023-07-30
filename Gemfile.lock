@@ -1,12 +1,13 @@
 GIT
   remote: https://github.com/joshmn/ahoy_captain.git
-  revision: 59e558df354ba6ae73a2ddc20e92ab85a47ada22
+  revision: 8c4f0d08d2e518d97e1598175784f9786afc8c21
   specs:
-    ahoy_captain (0.1.1)
+    ahoy_captain (0.69)
       ahoy_matey (>= 1.1)
       chartkick (>= 4)
       groupdate (>= 5)
       importmap-rails (>= 1)
+      pagy (>= 4)
       rails (>= 6)
       ransack (>= 2.3)
       stimulus-rails (>= 1.1)
@@ -133,6 +134,7 @@ GEM
       racc (~> 1.4)
     nokogiri (1.15.3-x86_64-linux)
       racc (~> 1.4)
+    pagy (6.0.4)
     pg (1.5.3)
     puma (5.6.6)
       nio4r (~> 2.0)
@@ -207,7 +209,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  ahoy_captain (~> 0.1.1)!
+  ahoy_captain (~> 0.69)!
   ahoy_matey (~> 4.2)
   debug
   pg (~> 1.1)
