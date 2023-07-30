@@ -1,8 +1,7 @@
-GIT
-  remote: https://github.com/joshmn/ahoy_captain.git
-  revision: 8c4f0d08d2e518d97e1598175784f9786afc8c21
+PATH
+  remote: ../ahoy_captain
   specs:
-    ahoy_captain (0.69)
+    ahoy_captain (0.69420)
       ahoy_matey (>= 1.1)
       chartkick (>= 4)
       groupdate (>= 5)
