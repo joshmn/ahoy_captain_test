@@ -32,3 +32,4 @@ end
 gem "ahoy_captain", "0.6969", github: "joshmn/ahoy_captain"
 
 gem "ahoy_matey", "~> 4.2"
+gem 'geocoder'

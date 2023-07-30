@@ -103,21 +103,38 @@ AhoyCaptain.configure do |config|
   #   end
 
   AhoyCaptain.configure do |config|
-    config.goal :appointment_created do
-      label "Appointment Created"
-      event "$appointment.created"
+    config.goal :clicked_something do
+      label "Changed the URL"
+      event "$clicked_something"
     end
 
-    config.goal :appointment_updated do
-      label "Appointment Updated"
-      event "$appointment.updated"
+    config.goal :filter_by_period do
+      label "Changed the period"
+      event "$changed_period"
     end
 
-    config.funnel :appointments do
-      label "Appointments"
-      goal :appointment_created
-      goal :appointment_updated
+    config.goal :details do
+      label "Viewed details"
+      event "$details"
+    end
+
+    config.goal :details_paginate do
+      label "Paginated details"
+      event "$details_paginate"
+    end
+
+    config.funnel :success do
+      label "Likes what they saw"
+      goal :clicked_something
+      goal :filter_by_period
+    end
+
+    config.funnel :details do
+      label "Paginated through details"
+      goal :details
+      goal :details_paginate
     end
   end
 
 end
+
