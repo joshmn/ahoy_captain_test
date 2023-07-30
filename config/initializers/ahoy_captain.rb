@@ -64,9 +64,17 @@ AhoyCaptain.configure do |config|
   # config.periods.add :param_name, "Label", -> { [3.days.ago, Date.today] }
   #
   # You can also remove an existing one:
-  config.ranges.delete(:all)
-  config.ranges.delete(:realtime)
-  config.ranges.default = :day
+  config.ranges.reset
+  config.ranges.add :realtime, "Now", -> { [1.minute.ago] }
+  config.ranges.add '1h', "This hour", -> { [Time.current.beginning_of_hour, Time.current] }
+  config.ranges.add '60m', "Last 60 minutes", -> { [60.minutes.ago, Time.current] }
+  config.ranges.add '4h', "Last 4 hours", -> { [4.hours.ago, Time.current] }
+  config.ranges.add '12h', "Last 12 hours", -> { [12.hours.ago, Time.current] }
+  config.ranges.add '24h', "Last 24 hours", -> { [24.hours.ago, Time.current] }
+  config.ranges.add 'today', "Today", -> { [Time.current.beginning_of_day, Time.current] }
+  config.ranges.add '3d', "Last 3 days", -> { [3.days.ago, Time.current] }
+  config.ranges.add '1w', "1 week", -> { [1.week.ago, Time.current] }
+  config.ranges.default = '1h'
   config.ranges.max = 180.days
   #
   # Or add to the defaults:
