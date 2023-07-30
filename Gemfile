@@ -29,6 +29,6 @@ group :development do
 end
 
 
-gem "ahoy_captain", "~> 0.6969", github: "joshmn/ahoy_captain"
+gem "ahoy_captain", "0.6969", github: "joshmn/ahoy_captain"
 
 gem "ahoy_matey", "~> 4.2"
