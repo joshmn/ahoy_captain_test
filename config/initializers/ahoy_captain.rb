@@ -64,7 +64,7 @@ AhoyCaptain.configure do
   # config.periods.add :param_name, "Label", -> { [3.days.ago, Date.today] }
   #
   # You can also remove an existing one:
-  # config.periods.delete(:mtd)
+  config.periods.delete(:all)
   #
   # Or add to the defaults:
   # config.periods.add :custom, "Custom", -> { [6.hours.ago, 2.minutes.ago] }
@@ -101,21 +101,22 @@ AhoyCaptain.configure do
   #     event "$appointment.paid"
   #   end
 
-  # ==> Funnels
-  # Your mother definitely didn't tell you about conversation rate.
-  # Except, you're here, so...
-  #
-  # Basically:
-  #
-  #   config.funnel "Label/Title" do
-  #     goal :goal_id_1
-  #     goal :goal_id_2
-  #   end
-  #
-  # Real-world example:
-  #
-  #   config.funnel "Appointment Workflow" do
-  #     goal :appointment_created
-  #     goal :appointment_paid
-  #   end
+  AhoyCaptain.configure do |config|
+    config.goal :appointment_created do
+      label "Appointment Created"
+      event "$appointment.created"
+    end
+
+    config.goal :appointment_updated do
+      label "Appointment Updated"
+      event "$appointment.updated"
+    end
+
+    config.funnel :appointments do
+      label "Appointments"
+      goal :appointment_created
+      goal :appointment_updated
+    end
+  end
+
 end
