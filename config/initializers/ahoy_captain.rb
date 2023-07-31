@@ -73,7 +73,7 @@ AhoyCaptain.configure do |config|
   config.ranges.add 'today', "Today", -> { [Time.current.beginning_of_day, Time.current] }
   config.ranges.add '3d', "Last 3 days", -> { [3.days.ago, Time.current] }
   config.ranges.add '1w', "1 week", -> { [1.week.ago, Time.current] }
-  config.ranges.default = '1h'
+  config.ranges.default = '12h'
   config.ranges.max = 180.days
   #
   # Or add to the defaults:
